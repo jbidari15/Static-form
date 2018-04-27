@@ -40,7 +40,7 @@
         </div>
         <div class="skills">
            <div class="skilltitle">2. Skills and location</div>
-           <div>What is your primary design disicipline?</div>
+           <div class="primary-discipline">What is your primary design disicipline?</div>
            
            <div class="middle">
          
@@ -51,13 +51,13 @@
             </div>
           </label>
           <label>
-            <input type="radio" name="radio" checked/>
+            <input type="radio" name="radio" />
             <div class=" box">
               <span>Visual Design</span>
             </div>
           </label>
           <label>
-            <input type="radio" name="radio" checked/>
+            <input type="radio" name="radio"/>
             <div class="box">
               <span>UX Design</span>
             </div>
@@ -73,7 +73,7 @@
           </div>
           <div class="exp-interest">
             <div class="exp">
-                <div>Do you have experience with any other discipline?</div>
+                <div class="do-you" >Do you have experience with any other discipline?</div>
                 <label class="Interest">Visual Design
                         <input type="checkbox" checked="checked">
                         <span class="checkmark"></span>
@@ -90,7 +90,7 @@
                       
             </div>
             <div class="places">Where are you interested in working?
-                <div>asdfas asdfadsf asfdasdfasdc asdfasdf asddfasddfasdf asdf asdfasdfa asddfasddf cxgrff</div>
+                <div class="exp-para">asdfas asdfadsf asfdasdfasdc asdfasdf asddfasddfasdf asdf asdfasdfa asddfasddf cxgrff</div>
                 <label class="Interest">Visual Design
                         <input type="checkbox" >
                         <span class="checkmark"></span>
@@ -127,9 +127,11 @@
                   </div>
         </div>
         <div class="Portfolio">
-            <div>3.Portfolio</div>
+            <div class="portfolio-title">3.Portfolio</div>
             <div>Prove you are IBBM´s next great designer by showing us who you are .What you´ve done.How you think.<br/>Tell us your story.</div>
-            <textarea name="portfolio" id="" cols="10" rows="1" placeholder="Portfolio link"></textarea>
+            <textarea  class="portfolio-link" name="portfolio" id="" cols="10" rows="1" placeholder="Portfolio link*"></textarea>
+            <div><textarea  class="else" name="else" id="" cols="5" rows="5" placeholder="Anything else (another link,availability .etc)?"></textarea></div>
+            <div> <input type="submit"></div>
         </div>
     </div>
 </form>

@@ -7,6 +7,7 @@
     padding-right: 60px;
     border:1px solid green;
     background: #454E57;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .heading{
     display: flex;
@@ -99,7 +100,7 @@ input[type="tel"]{
   }
   
   .middle input[type="radio"]:checked + .box {
-    background-color: #007e90;
+    background-color:#47B3ED;
   }
   .middle .box {
     width: 200px;
@@ -113,6 +114,13 @@ input[type="tel"]{
     align-items: center;
     padding-top: 15px;
   }
+  .primary-discipline{
+     
+      margin-bottom: 20px;
+  }
+  .places{
+      margin-top: 30px;
+  }
  .exp-interest{
      display:flex;
      justify-content: space-between;
@@ -120,17 +128,27 @@ input[type="tel"]{
  .firstexperience{
      display:flex;
  }
+ .do-you{
+     margin-top:30px;
+     margin-bottom: 20px;
+ }
  .Interest {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
    }
    .Interest input {
     position: absolute;
     opacity: 0;
     
 }
+.exp-para{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color:#6E737B;
+}
+
 .checkmark {
     position: absolute;
     top: 0;
@@ -138,6 +156,7 @@ input[type="tel"]{
     height: 25px;
     width: 25px;
  border:1px solid white;
+
 }
 .Interest:hover input ~ .checkmark {
     background-color: #ccc;
@@ -145,6 +164,43 @@ input[type="tel"]{
 .Interest input:checked ~ .checkmark {
     background-color: #2196F3;
 }
-.portfolio .textarea{
-    width: 100%;
+.Portfolio{
+    display: flex;
+    flex-direction: column;
+    color:white;
+ 
+}
+.portfolio-title{
+    border-bottom: 5px solid #1886A9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+   
+}
+.Portfolio .portfolio-link{
+    border-width:0 0 3px 0;
+    border-color:  #787F89;
+    width:100%;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    resize:none;
+ 
+  
+}
+.else{
+    border-width:3px 3px 3px 3px;
+    border-color:  #787F89;
+    width:100%;
+    line-height: 30px;
+    
+    margin-bottom: 40px;
+   
+ 
+}
+input[type="submit"]{
+    color:white;
+    border:1px solid #2196F3;
+    width:150px;
+   padding-left: 50px;
+   background:  #2196F3;
 }
