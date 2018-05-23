@@ -13,24 +13,24 @@
         <div class="container">
             <div class="heading">
                <div class="title"><h1>Let's talk</h1></div> 
-               <div>Think you have what it taes? Show us</div>
+               <div>Think you have what it takes? Show us</div>
 
             </div>
             <div class="personalInfo">
            <div class="infoTitle"> 1.Personal Information</div>
            <div class="nameAndPhone">
-               <input class="seventyparcentinput" type="text" placeholder="Full name*" name="Full name" required >
-               <input  type="tel" placeholder="Phone*" required>
+               <input class="seventyparcentinput" type="text" placeholder="Full name*" name="Full name" required pattern="[a-z ]{3,}">
+               <input  type="tel" placeholder="Phone*" required pattern="\+358[\d]{10}" title="please start with +358 and length should be 10 characters">
            </div>
            <div class="remainingInfos">
-               <input  class="seventyparcentinput" type="email" placeholder="Email*" required >
-               <input  class="seventyparcentinput" type="email" placeholder="Re enter email*" required>
+               <input  class="seventyparcentinput" type="email" placeholder="Email*" required pattern="\S+@\S+\.\S+">
+               <input  class="seventyparcentinput" type="email" placeholder="Re enter email*" required pattern="\S+@\S+\.\S+">
                <textarea class="address" name="Address" id="" placeholder="Address" cols="3" rows="5"required ></textarea>
                <div class="cityandstate">
-                   <input type="text" placeholder="City*" required>
-                   <input type="text" placeholder="State"  required>
+                   <input type="text" placeholder="City*" required pattern="[a-z]{3,}">
+                   <input type="text" placeholder="State"  required  pattern="[a-z]{3,}"  pattern="[a-z]{3,}">
                    <input type="text"placeholder="Country/Region*"  required>
-                   <input type="num" placeholder="Zip Postal Code"  required>
+                   <input type="num" placeholder="Zip Postal Code"  required pattern="[\d]{4}" title="length should be atleast 4 characters long">
                </div>
                <div class="hear">
                    <textarea class="howyouhear" name="Howyouhear" placeholder="How did you hear about us" id="" cols="30" rows="1" required></textarea>
