@@ -57,6 +57,12 @@ textarea{
 .seventyparcentinput{
     width:70%;
 }
+input:invalid{
+border:1px solid red;
+}
+input[type="text"]:valid{
+    border:1px solid green;
+}
 input[type="tel"]{
     width:20%;
 }

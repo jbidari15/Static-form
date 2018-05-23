@@ -19,21 +19,21 @@
             <div class="personalInfo">
            <div class="infoTitle"> 1.Personal Information</div>
            <div class="nameAndPhone">
-               <input class="seventyparcentinput" type="text" placeholder="Full name*" name="Full name" >
-               <input  type="tel" placeholder="Phone*">
+               <input class="seventyparcentinput" type="text" placeholder="Full name*" name="Full name" required >
+               <input  type="tel" placeholder="Phone*" required>
            </div>
            <div class="remainingInfos">
-               <input  class="seventyparcentinput" type="email" placeholder="Email*">
-               <input  class="seventyparcentinput" type="email" placeholder="Re enter email*">
-               <textarea class="address" name="Address" id="" placeholder="Address" cols="3" rows="5" ></textarea>
+               <input  class="seventyparcentinput" type="email" placeholder="Email*" required >
+               <input  class="seventyparcentinput" type="email" placeholder="Re enter email*" required>
+               <textarea class="address" name="Address" id="" placeholder="Address" cols="3" rows="5"required ></textarea>
                <div class="cityandstate">
-                   <input type="text" placeholder="City*">
-                   <input type="text" placeholder="State">
-                   <input type="text"placeholder="Country/Region*">
-                   <input type="num" placeholder="Zip Postal Code">
+                   <input type="text" placeholder="City*" required>
+                   <input type="text" placeholder="State"  required>
+                   <input type="text"placeholder="Country/Region*"  required>
+                   <input type="num" placeholder="Zip Postal Code"  required>
                </div>
                <div class="hear">
-                   <textarea class="howyouhear" name="Howyouhear" placeholder="How did you hear about us" id="" cols="30" rows="1"></textarea>
+                   <textarea class="howyouhear" name="Howyouhear" placeholder="How did you hear about us" id="" cols="30" rows="1" required></textarea>
                </div>
            </div>
 
@@ -129,8 +129,10 @@
         <div class="Portfolio">
             <div class="portfolio-title">3.Portfolio</div>
             <div>Prove you are IBBM´s next great designer by showing us who you are .What you´ve done.How you think.<br/>Tell us your story.</div>
-            <textarea  class="portfolio-link" name="portfolio" id="" cols="10" rows="1" placeholder="Portfolio link*"></textarea>
-            <div><textarea  class="else" name="else" id="" cols="5" rows="5" placeholder="Anything else (another link,availability .etc)?"></textarea></div>
+            <textarea  class="portfolio-link" name="portfolio" id="" cols="10" rows="1" placeholder="Portfolio link*" required></textarea>
+            <div><textarea  class="else" name="else" id="" cols="5" rows="5" placeholder="Anything else (another link,availability .etc)?" required></textarea></div>
+
+            <script src="index.js"></script>
             <div> <input type="submit"></div>
         </div>
     </div>
