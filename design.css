@@ -57,10 +57,13 @@ textarea{
 .seventyparcentinput{
     width:70%;
 }
-input:invalid{
+input:focus,textarea{
+    outline:none;
+}
+.invalid{
 border:1px solid red;
 }
-input[type="text"]:valid{
+.valid{
     border:1px solid green;
 }
 input[type="tel"]{
@@ -203,10 +206,12 @@ input[type="tel"]{
    
  
 }
-input[type="submit"]{
+#submitIt{
     color:white;
     border:1px solid #2196F3;
     width:150px;
-   padding-left: 50px;
+    height:50px;
+    text-align: center;
+   
    background:  #2196F3;
 }

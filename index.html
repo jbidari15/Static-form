@@ -19,21 +19,21 @@
             <div class="personalInfo">
            <div class="infoTitle"> 1.Personal Information</div>
            <div class="nameAndPhone">
-               <input class="seventyparcentinput" type="text" placeholder="Full name*" name="Full name" required pattern="[a-z ]{3,}">
-               <input  type="tel" placeholder="Phone*" required pattern="\+358[\d]{10}" title=" start with +358 and length should be 10 characters">
+               <input class="seventyparcentinput" type="text" placeholder="Full name*" name="fullName" title="name should be at least 3 characters long" required >
+               <input  type="tel" placeholder="Phone*" name="telephone"required title=" start with +358 and length should be exactly 12 digits">
            </div>
            <div class="remainingInfos">
-               <input  class="seventyparcentinput" type="email" placeholder="Email*" required pattern="\S+@\S+\.\S+">
-               <input  class="seventyparcentinput" type="email" placeholder="Re enter email*" required pattern="\S+@\S+\.\S+">
-               <textarea class="address" name="Address" id="" placeholder="Address" cols="3" rows="5"required ></textarea>
+               <input  class="seventyparcentinput" type="email" name="email" placeholder="Email*" required >
+               <input  class="seventyparcentinput" type="email" name="confirmEmail" placeholder="Re enter email*" required >
+               <textarea class="address" name="hear" id="" placeholder="Address" cols="3" rows="5"required ></textarea>
                <div class="cityandstate">
-                   <input type="text" placeholder="City*" required pattern="[a-z]{3,}">
-                   <input type="text" placeholder="State"  required  pattern="[a-z]{3,}"  pattern="[a-z]{3,}">
-                   <input type="text"placeholder="Country/Region*"  required>
-                   <input type="num" placeholder="Zip Postal Code"  required pattern="[\d]{4}" title="length should be atleast 4 characters long">
+                   <input type="text" placeholder="City*"name="city" required >
+                   <input type="text" placeholder="State" name="state"  required >
+                   <input type="text"placeholder="Country/Region*" name="country" required>
+                   <input type="num" placeholder="Zip Postal Code" name="zip"required  title="length should be atleast 4 characters long">
                </div>
                <div class="hear">
-                   <textarea class="howyouhear" name="Howyouhear" placeholder="How did you hear about us" id="" cols="30" rows="1" required></textarea>
+                   <textarea class="howyouhear"  name="hear" placeholder="How did you hear about us" id="" cols="30" rows="1" required></textarea>
                </div>
            </div>
 
@@ -75,15 +75,15 @@
             <div class="exp">
                 <div class="do-you" >Do you have experience with any other discipline?</div>
                 <label class="Interest">Visual Design
-                        <input type="checkbox" checked="checked">
+                        <input class="checkme" type="checkbox">
                         <span class="checkmark"></span>
                       </label>
                       <label class="Interest">UX Design
-                        <input type="checkbox">
+                        <input class="checkme" type="checkbox">
                         <span class="checkmark"></span>
                       </label>
                       <label class="Interest">Front-end Development
-                        <input type="checkbox">
+                        <input class="checkme" type="checkbox">
                         <span class="checkmark"></span>
                       </label>
                    
@@ -92,36 +92,36 @@
             <div class="places">Where are you interested in working?
                 <div class="exp-para">asdfas asdfadsf asfdasdfasdc asdfasdf asddfasddfasdf asdf asdfasdfa asddfasddf cxgrff</div>
                 <label class="Interest">Visual Design
-                        <input type="checkbox" >
-                        <span class="checkmark"></span>
+                        <input class="checkPlaces" type="checkbox" >
+                        <span class="checkmark "></span>
                       </label>
                       <label class="Interest">UX Design
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
+                        <input class="checkPlaces" type="checkbox">
+                        <span class="checkmark "></span>
                       </label>
                       <label class="Interest">Front-end Development
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
+                        <input class="checkPlaces" type="checkbox">
+                        <span class="checkmark "></span>
                       </label>
                       <label class="Interest">Visual Design
-                            <input type="checkbox" >
+                            <input class="checkPlaces" type="checkbox" >
                             <span class="checkmark"></span>
                           </label>
                           <label class="Interest">UX Design
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
+                            <input class="checkPlaces" type="checkbox">
+                            <span class="checkmark "></span>
                           </label>
                           <label class="Interest">Front-end Development
-                            <input type="checkbox">
+                            <input class="checkPlaces" type="checkbox">
                             <span class="checkmark"></span>
                           </label>
                           <label class="Interest">Visual Design
-                                <input type="checkbox" >
+                                <input class="checkPlaces" type="checkbox" >
                                 <span class="checkmark"></span>
                               </label>
                               <label class="Interest">UX Design
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
+                                <input class="checkPlaces" type="checkbox">
+                                <span class="checkmark "></span>
                               </label>
                      </div>
                   </div>
@@ -129,13 +129,13 @@
         <div class="Portfolio">
             <div class="portfolio-title">3.Portfolio</div>
             <div>Prove you are IBBM´s next great designer by showing us who you are .What you´ve done.How you think.<br/>Tell us your story.</div>
-            <textarea  class="portfolio-link" name="portfolio" id="" cols="10" rows="1" placeholder="Portfolio link*" required></textarea>
-            <div><textarea  class="else" name="else" id="" cols="5" rows="5" placeholder="Anything else (another link,availability .etc)?" required></textarea></div>
-
-            <script src="index.js"></script>
-            <div> <input type="submit"></div>
+            <textarea  class="portfolio-link" name="hear" id="" cols="10" rows="1" placeholder="Portfolio link*" required></textarea>
+            <div><textarea  class="else" name="hear" id="" cols="5" rows="5" placeholder="Anything else (another link,availability .etc)?" required></textarea></div>
+            <button id="submitIt">Submit</button>
+            
         </div>
     </div>
 </form>
+<script src="index.js"></script>
 </body>
 </html>
